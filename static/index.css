@@ -1,0 +1,54 @@
+ul, ol {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+header {
+    padding: 10px;
+    background-color: deepskyblue;
+    color: white;
+}
+
+.produkter {
+    margin: 10px;
+}
+
+.produkt {
+    display: inline-flex;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    padding: 10px;
+    margin: 10px;
+}
+
+.produkt-info {
+    min-width: 100px;
+}
+
+.produkt-bilde {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.produkt-antall {
+    width: 50px;
+}
+
+nav ol li a {
+    color: white;
+}
+
+nav ol li a:hover {
+    color: black;
+}
+
+nav ol li {
+    display: inline;
+}
+
+nav ol {
+    margin-bottom: 0;
+}

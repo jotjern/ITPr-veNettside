@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ofoten lokalmat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script defer src="produkter.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Smak og Behag - Ofoten Lokalmat</h1>
+        <nav>
+            <ol>
+                <li><a href="/">Hjem</a></li>
+                <li><a href="/produkter">Produkter</a></li>
+                <li><a href="/bruker">Bruker</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <button style="float: right; margin-right: 10px" onclick="send_bestilling()">Send bestilling</button>
+
+        <div class="produkter">
+            <template class="produkt-mal">
+                <li class="produkt">
+                    <img class="produkt-bilde" alt src="">
+                    <div class="produkt-info">
+                        <h3 class="produkt-navn"></h3>
+                        <p class="produkt-pris"></p>
+                    </div>
+                    <div class="produkt-antall-konteiner">
+                        <button class="produkt-pluss">+</button>
+                        <input aria-label class="produkt-antall" type="number">
+                        <button class="produkt-minus">-</button>
+                    </div>
+                </li>
+            </template>
+            <h1>Produkter:</h1>
+            <ul class="produkt-liste"></ul>
+        </div>
+    </main>
+</body>
+</html>
